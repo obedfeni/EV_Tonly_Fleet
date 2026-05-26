@@ -1,3 +1,4 @@
+import { LangProvider } from '@/lib/lang-context';
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -16,3 +17,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   )
 }
+<html>
+  <body>
+    <LangProvider>
+      {children}
+    </LangProvider>
+  </body>
+</html>
