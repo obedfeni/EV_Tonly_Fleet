@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { Truck, Eye, EyeOff, Globe } from 'lucide-react'
-import { t, type Locale } from '../../../lib/i18n'
+
 
 export default function RegisterPage() {
   const [form, setForm] = useState({ name:'', email:'', password:'', confirmPassword:'', role:'WORKER' })
