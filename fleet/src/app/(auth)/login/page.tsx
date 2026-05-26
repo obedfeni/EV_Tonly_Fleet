@@ -4,7 +4,7 @@ import { signIn } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { Truck, Eye, EyeOff, Globe } from 'lucide-react'
-import { translations, t, type Locale } from '../../../lib/i18n'
+
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')
